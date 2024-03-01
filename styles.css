@@ -51,21 +51,20 @@ header a {
     display: flex;
     align-items: center;
     background-image: linear-gradient(to top, yellow, #fff);
-    padding: 5rem 2rem 0;
-    width: 100%;
+    padding: 4.5rem 2rem 0;
     box-sizing: border-box;
 }
 
 div.titulo-pagina {
     display: flex;
     flex-direction: column;
-    padding: 0 10rem;
+    padding: 0 9rem;
     gap: 4rem;
     line-height: 1.5;
 }
 
 .secao-capa h1 {
-    font-size: 6.5rem;
+    font-size: 7rem;
     color: #2e2e2e;
 }
 
@@ -86,8 +85,8 @@ div.titulo-pagina {
 }
 
 .secao-capa img {
-    width: 60rem;
-    padding: 0 7rem;
+    width: 65rem;
+    padding: 0 7rem 0 3rem;
 }
 
 .secao-cursos {
@@ -96,34 +95,70 @@ div.titulo-pagina {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 5rem 2rem;
-    background-color: #ededed;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: #f6f6f6;
 }
 
 .secao-cursos h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
 }
 
 .cards-cursos {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 90%;
     gap: 2rem;
+    box-sizing: border-box;
 }
 
-article {
+.cards-cursos article {
     flex-basis: 22rem;
     background-color: #fff;
     border-radius: 1rem;
 }
 
-article h3 {
+.cards-cursos article h3 {
     font-size: 2.5rem;
     padding: 2rem;
 }
 
-article p {
+.cards-cursos article p {
     font-size: 1.5rem;
     padding: 0 2rem 4rem 2rem;
+}
+
+.secao-cursos a {
+    background-color: #f3c802;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+.secao-nossa-escola {
+    display: flex;
+    background-color: #003464;
+    height: 70vh;
+}
+
+.secao-nossa-escola img {
+    width: 60rem;
+    margin: 7.7rem 0 0 5rem;
+}
+
+.secao-nossa-escola article {
+    width: 50rem;
+    color: #fff;
+    padding: 5rem 15rem;
+    font-size: 1.8rem;
+}
+
+.secao-nossa-escola h2 {
+    font-size: 3rem;
+    padding: 5rem 0;
 }
