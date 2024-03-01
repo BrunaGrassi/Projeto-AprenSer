@@ -7,22 +7,29 @@
 }
 
 html {
-    width: 1110px;
+    width: 100%;
     font-size: 62.5%;
     --tamanho-header: 2rem;
+}
+
+body {
+    width: 100%;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     background-color: #2a2a2a;
-    padding: 0.2rem 5rem;
+    padding: 0.2rem 7rem;
+    box-sizing: border-box;
 }
 
 header img {
-    width: 15rem;
+    width: 16rem;
     padding: 2.2rem 2rem;
+    box-sizing: border-box;
 }
 
 header ul {
@@ -46,18 +53,19 @@ header a {
     background-image: linear-gradient(to top, yellow, #fff);
     padding: 5rem 2rem 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 div.titulo-pagina {
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 10rem;
     gap: 4rem;
     line-height: 1.5;
 }
 
 .secao-capa h1 {
-    font-size: 5.5rem;
+    font-size: 6.5rem;
     color: #2e2e2e;
 }
 
@@ -79,5 +87,43 @@ div.titulo-pagina {
 
 .secao-capa img {
     width: 60rem;
+    padding: 0 7rem;
 }
 
+.secao-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    background-color: #ededed;
+}
+
+.secao-cursos h2 {
+    font-size: 3rem;
+}
+
+.cards-cursos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2rem;
+}
+
+article {
+    flex-basis: 22rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+article h3 {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+article p {
+    font-size: 1.5rem;
+    padding: 0 2rem 4rem 2rem;
+}
