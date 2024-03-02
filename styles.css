@@ -3,12 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
     --dark-color: #2a2a2a;
     --yellow: #f3c802;
+    --dark-blue: #003464;
+    --light-gray: #f6f6f6
 }
 
 html {
@@ -18,23 +20,36 @@ html {
 
 body {
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.bg-yellow {
+    background-image: linear-gradient(to top, yellow, #fff);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.bg-light-gray{
+    background-color: var(--light-gray);
+}
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--dark-color);
     padding: 0.2rem 7rem;
-    box-sizing: border-box;
 }
 
 header img {
     width: 16rem;
     padding: 2.2rem 2rem;
-    box-sizing: border-box;
 }
 
 header ul {
@@ -52,37 +67,47 @@ header a {
     outline: 0.1rem solid var(--yellow);
 }
 
+header a:hover {
+    background-color: #000;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+}
+
 .secao-capa {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top, yellow, #fff);
     padding: 4.5rem 2rem 0;
-    box-sizing: border-box;
 }
 
 div.titulo-pagina {
     display: flex;
     flex-direction: column;
+    max-width: 70rem;
     padding: 0 9rem;
     gap: 4rem;
     line-height: 1.5;
 }
 
 .secao-capa h1 {
-    font-size: 7rem;
+    
+    font-size: 7.5rem;
+    line-height: 1.1;
     color: #2e2e2e;
 }
 
 .secao-capa a {
-    background-color: var(--yellow);
+    background-color: #f9cf17;
     color: var(--dark-color);
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     border-radius: 0.5rem;
-    padding: 1.2rem 3rem;
+    padding: 1rem 2.5rem;
     font-size: 2rem;
-    width: 12rem;
+    width: 17rem;
 }
 
 .caixa-alta {
@@ -100,9 +125,8 @@ div.titulo-pagina {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    height: 100vh;
+    height: 80rem;
     padding: 0 2rem;
-    background-color: #f6f6f6;
 }
 
 .secao-cursos h2 {
@@ -115,13 +139,14 @@ div.titulo-pagina {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    box-sizing: border-box;
+    max-width: 70rem;
 }
 
 .cards-cursos article {
-    flex-basis: 22rem;
+    flex: 1;
     background-color: #fff;
     border-radius: 1rem;
+    max-height: 40rem;
 }
 
 .cards-cursos article h3 {
@@ -131,7 +156,14 @@ div.titulo-pagina {
 
 .cards-cursos article p {
     font-size: 1.5rem;
-    padding: 0 2rem 4rem 2rem;
+    padding: 0 2rem 3rem 2rem;
+}
+
+div.borda-card {
+    height: 18rem;
+    border: solid 2px rgb(230, 230, 230);
+    border-radius: 0 0 1rem 1rem;
+    border-top: transparent;
 }
 
 .secao-cursos a {
@@ -147,25 +179,25 @@ div.titulo-pagina {
 
 .secao-nossa-escola {
     display: flex;
-    background-color: #003464;
-    height: 70vh;
+    height: 51.9rem;
 }
 
 .secao-nossa-escola img {
-    width: 60rem;
-    margin: 7.7rem 0 0 5rem;
+    width: 60.1rem;
+    margin: 7.6rem 0 0 5rem;
 }
 
 .secao-nossa-escola article {
-    width: 50rem;
+    width: 75rem;
     color: #fff;
     padding: 5rem 15rem;
     font-size: 1.8rem;
+    line-height: 1.5;
 }
 
 .secao-nossa-escola h2 {
     font-size: 3rem;
-    padding: 5rem 0;
+    margin: 2rem 0 3rem 0 ;    
 }
 
 .secao-contato {
@@ -181,12 +213,11 @@ div.titulo-pagina {
 }
 
 address {
-    font-size: 1.5rem;
-    margin-left: 90rem;
-    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    margin: 1rem 0 5rem 102rem;
     text-align: right;
     line-height: 1.5;
-
+    font-style: normal;
 }
 
 footer {
@@ -201,5 +232,7 @@ footer {
 
 
 .container {
+    width: 1473px;
+    max-width: 1473px;
     margin: 0 auto;
 }
